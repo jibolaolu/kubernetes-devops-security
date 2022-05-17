@@ -8,6 +8,14 @@ pipeline {
               archive 'target/*.jar' //so that they can be downloaded later
               echo "I have finished building"
             }
-        }   
+        }
+
+      stage('Unit Test') {
+                  steps {
+                    echo "Starting my unt testing"
+                    sh "mvn test"
+
+             }
+        }
     }
 }

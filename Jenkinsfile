@@ -26,9 +26,11 @@ pipeline {
 
       stage("Docker Build and Push"){
       steps {
+        withDockerRegistry([credentials: "docker-hub credentials", url:""]){
         sh "printenv"
         sh 'docker build -t jibolaolu/numeric-app:""$GIT_COMMIT"" . '
         sh 'docker push jibolaolu/numeric-app:""$GIT_COMMIT"" '
+            }
         }
       }
     }

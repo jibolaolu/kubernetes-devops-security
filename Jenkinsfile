@@ -8,7 +8,6 @@ pipeline {
               archive 'target/*.jar' //so that they can be downloaded later
               echo "I have finished building"
             }
-
          }
 
       stage('Unit Test') {
@@ -40,8 +39,7 @@ pipeline {
                     withSonarQubeEnv('SonarQube'){
                      sh "mvn sonar:sonar \
                       -Dsonar.projectKey=numeric-application \
-                      -Dsonar.host.url=http://seundevsecops-demo.eastus.cloudapp.azure.com:9000 \
-                      -Dsonar.login=95a653fe2d77ad7e42f0f6f4deefa3105f1abfa3"
+                      -Dsonar.host.url=http://seundevsecops-demo.eastus.cloudapp.azure.com:9000"
                       }
                       timeout(time: 2, unit:'MINUTES'){
                         script{

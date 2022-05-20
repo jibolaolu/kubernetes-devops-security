@@ -28,7 +28,7 @@ pipeline {
                      sh "mvn sonar:sonar \
                       -Dsonar.projectKey=numeric-application \
                       -Dsonar.host.url=http://seundevsecops-demo.eastus.cloudapp.azure.com:9000\
-                      -Dsonar.login=66e36dcfcb5aa9bc4e83245f9006b61706897164"
+                      -Dsonar.login=593b9badd89bc4bfbb278d116a0c5b358c1549dd"
 
                       }
                       timeout(time: 2, unit:'MINUTES'){

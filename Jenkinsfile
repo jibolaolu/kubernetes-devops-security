@@ -1,6 +1,5 @@
 pipeline {
   agent any
-
   stages {
       stage('Build Artifact') {
             steps {
@@ -28,7 +27,9 @@ pipeline {
                     withSonarQubeEnv('SonarQube'){
                      sh "mvn sonar:sonar \
                       -Dsonar.projectKey=numeric-application \
-                      -Dsonar.host.url=http://seundevsecops-demo.eastus.cloudapp.azure.com:9000"
+                      -Dsonar.host.url=http://seundevsecops-demo.eastus.cloudapp.azure.com:9000\
+                      -Dsonar.login=66e36dcfcb5aa9bc4e83245f9006b61706897164"
+
                       }
                       timeout(time: 2, unit:'MINUTES'){
                         script{

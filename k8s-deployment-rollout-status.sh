@@ -9,3 +9,4 @@ then
     exit 1;
 else
 	echo "Deployment ${deploymentName} Rollout is Success"
+fi

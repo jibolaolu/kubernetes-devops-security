@@ -86,7 +86,7 @@ pipeline {
             parallel(
                 "Deployment": {
                     withKubeConfig([credentialsId: 'kubeconfig']){
-                        sh 'bash k8-deployment.sh'
+                        sh 'bash k8s-deployment.sh'
                     }
                 },
                 "Roll-Out Status": {

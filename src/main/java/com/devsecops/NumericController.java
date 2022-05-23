@@ -47,5 +47,4 @@ public class NumericController {
 			return Integer.parseInt(response);
 		}
 	}
-
 }

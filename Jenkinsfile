@@ -17,7 +17,6 @@ pipeline {
               echo "I have finished building"
             }
          }
-
       stage('Unit Test') {
             steps {
                 echo "Starting my unt testing"
@@ -92,7 +91,6 @@ pipeline {
 
          }
         }
-
       //stage("Kubernetes Deployment DEV"){
         //steps {
             //withKubeConfig([credentialsId: 'kubeconfig']){

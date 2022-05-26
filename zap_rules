@@ -3,5 +3,5 @@
 # Active scan rules set to IGNORE will not be run which will speed up the scan
 # Only the rule identifiers are used - the names are just for info
 # You can add your own messages to each rule by appending them after a tab on each line.
-100001  IGNORE  http://seundevsecops-demo.eastus.cloudapp.azure.com:31025/
+#100001  IGNORE  http://seundevsecops-demo.eastus.cloudapp.azure.com:31025/
 100000  IGNORE  http://seundevsecops-demo.eastus.cloudapp.azure.com:31025/

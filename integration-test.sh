@@ -12,9 +12,9 @@ then
     response=$(curl -s $applicationURL:$PORT$applicationURI)
     http_code=$(curl -s -o /dev/null -w "%{http_code}" $applicationURL:$PORT$applicationURI)
 
-    if [[ "$response" == 100 ]];
+    if [[ "$response" == "Greater than 50" ]];
         then
-            echo "Increment Test Passed"
+            echo "Compare Test Passed"
         else
             echo "Increment Test Failed"
             exit 1;

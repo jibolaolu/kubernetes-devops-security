@@ -16,7 +16,7 @@ then
         then
             echo "Compare Test Passed"
         else
-            echo "Increment Test Failed"
+            echo "Compare Test Failed"
             exit 1;
     fi;
       if [[ "$http_code" == 200 ]];

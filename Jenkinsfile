@@ -7,7 +7,7 @@ pipeline {
       serviceName    = "devsecops-svc"
       imageName      = "jibolaolu/numeric-app:${GIT_COMMIT}"
       applicationURL = "http://seundevsecops-demo.eastus.cloudapp.azure.com"
-      applicationURI = "/compare/50"
+      applicationURI = "compare/51"
     }
   stages {
       stage('Build Artifact') {

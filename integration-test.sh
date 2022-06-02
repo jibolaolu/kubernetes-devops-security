@@ -13,7 +13,7 @@ then
     http_code=$(curl -s -o /dev/null -w "%{http_code}" $applicationURL:$PORT/$applicationURI)
     sleep 10
 
-    if [[ "$response" == "Greater than 50" ]];
+    if [[ "$response" == "Greater than 40" ]];
         then
             echo "Compare Test Passed"
         else
